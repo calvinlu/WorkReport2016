@@ -1,4 +1,6 @@
-public class TestJava {
+
+
+public class ArrayJavaTest {
 
 	public static void main(String[] args) {
 		final int arraySize = 100000000;
@@ -22,6 +24,8 @@ public class TestJava {
 			array[array.length - 1 - i] = temp;
 		}
 	}
+
+
 
 
 }
