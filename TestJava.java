@@ -1,4 +1,3 @@
-import java.util.Arrays;
 public class TestJava {
 
 	public static void main(String[] args) {
@@ -23,4 +22,6 @@ public class TestJava {
 			array[array.length - 1 - i] = temp;
 		}
 	}
+
+
 }
