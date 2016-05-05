@@ -1,4 +1,3 @@
-package java.ArrayTest;
 
 public class ArrayJavaTest {
 
