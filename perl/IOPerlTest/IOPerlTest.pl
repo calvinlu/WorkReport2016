@@ -7,6 +7,7 @@ my $filename = 'DataFile.csv';
 
 print "Processing File\n";
 my $startTime = time();
+
 if (open(my $fh, '<:encoding(UTF-8)', $filename)) {
   	while (my $row = <$fh>) {
     	my @row = split(",",$row);
@@ -14,7 +15,7 @@ if (open(my $fh, '<:encoding(UTF-8)', $filename)) {
 } else {
   	warn "Could not open file '$filename' $!";
 }
+
 my $endTime = time();
 my $runTime = ($endTime - $startTime) * 1000 ;
 print "IO Perl Time: $runTime ms\n";
-
