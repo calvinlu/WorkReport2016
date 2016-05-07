@@ -16,7 +16,6 @@ sub reverseArray{
    my @afterArray = reverse @beforeArray;
 }
 
-
 sub createArray{
 	my $arraySize = 1000000;
 	my @newArray;
