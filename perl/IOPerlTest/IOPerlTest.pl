@@ -4,8 +4,8 @@ use strict;
 use warnings;
  
 my $filename = 'DataFile.csv';
+print "Processing File\n";
 for my $j (0..9){
-	print "Processing File\n";
 	my $startTime = time();
 	if (open(my $fh, '<:encoding(UTF-8)', $filename)) {
 	  	while (my $row = <$fh>) {
