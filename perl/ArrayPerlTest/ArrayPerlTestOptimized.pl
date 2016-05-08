@@ -5,11 +5,13 @@ print "creating new array\n";
 createArray();
 
 print "reversing array\n";
-my $startTime = time();
-reverseArray();
-my $endTime = time();
-my $runTime = ($endTime - $startTime) * 1000 ;
-print "Reverse Array Time: $runTime ms\n";
+for my $j (0..9){
+	my $startTime = time();
+	reverseArray();
+	my $endTime = time();
+	my $runTime = ($endTime - $startTime) * 1000 ;
+	print "Reverse Array Time: $runTime ms\n";
+}
 
 sub reverseArray{
    @array = reverse @array;
@@ -21,3 +23,4 @@ sub createArray{
 		push @array, $i;
 	}
 }
+
