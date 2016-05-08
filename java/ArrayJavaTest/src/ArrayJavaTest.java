@@ -8,11 +8,12 @@ public class ArrayJavaTest {
 			array[i] = i + 1;
 		}
 
-		final long startTime = System.currentTimeMillis();
-		reverseArray(array);
-		final long endTime = System.currentTimeMillis();
-
-		System.out.print("Array Reverse Time: " + (endTime - startTime) + "ms");
+		for (int i = 0 ; i < 100 ; i++) {
+			final long startTime = System.currentTimeMillis();
+			reverseArray(array);
+			final long endTime = System.currentTimeMillis();
+			System.out.println("Array Reverse Time: " + (endTime - startTime) + "ms");
+		}
 	}
 
 	private static void reverseArray(int[] array){
@@ -22,8 +23,5 @@ public class ArrayJavaTest {
 			array[array.length - 1 - i] = temp;
 		}
 	}
-
-
-
 
 }

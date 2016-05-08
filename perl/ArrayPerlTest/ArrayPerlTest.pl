@@ -8,7 +8,7 @@ print "reversing array\n";
 my $startTime = time();
 @array = reverseArray(\@array);
 my $endTime = time();
-my $runTime = ($endTime - $startTime) * 1000 ;
+my $runTime = ($endTime - $startTime) * 1000;
 print "Reverse Array Time: $runTime ms\n";
 
 sub reverseArray{
@@ -17,7 +17,7 @@ sub reverseArray{
 }
 
 sub createArray{
-	my $arraySize = 1000000;
+	my $arraySize = 100000000;
 	my @newArray;
 	for my $i (0 .. $arraySize - 1) { 
 		push @newArray, $i;
